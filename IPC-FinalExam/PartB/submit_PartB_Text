@@ -1,0 +1,87 @@
+54| Enter main function
+
+56| Declare struct DrivingRecord "array of guzzlers" initialized to values
+    DrivingRecord[0].make = "Chevrolet", 
+    DrivingRecord[0].model = "Suburban",
+    DrivingRecord[0].numFills =  1, 
+    DrivingRecord[0].fillups[0].startOdometer = 10687,
+    DrivingRecord[0].fillups[0].endOdometer = 11319,
+    DrivingRecord[0].fillups[0].fuelUsed = 82.8
+    
+    DrivingRecord[1].make = "GMC", 
+    DrivingRecord[1].model = "Denali",
+    DrivingRecord[1].numFills =  2, 
+    DrivingRecord[1].fillups[0].startOdometer = 21992,
+    DrivingRecord[1].fillups[0].endOdometer = 22580,
+    DrivingRecord[1].fillups[0].fuelUsed = 92.1
+    DrivingRecord[1].fillups[1].startOdometer = 22680,
+    DrivingRecord[1].fillups[1].endOdometer = 23011,
+    DrivingRecord[1].fillups[1].fuelUsed = 78.5
+
+61| Declare struct DrivingRecord "top" and "bottom (garbage)
+
+62| Declare double type variable avg
+
+64| Call function: "getAverage"
+    sending: struct of guzzlers,  2, pointer to top and bottom
+
+22| Enter double function : "getAverage"
+    receiving: struct DrivingRecord "array of recs" and 2,
+               "best" = pointer to top in main,
+               "worst" = pointer to bottom in main
+
+24| Declare int type variables i (garbage), j(garbage), worstPos = -1, bestPos = -1
+
+25| Declare double type variable dist, fillDist(garbage), economy(garbage), 
+                                 totalEconomy = 0.0, worstEconomy = -1, bestEconomy = 9999
+
+27| i = 0 | 0 < 2 (True)
+
+29| Declare dist = 0
+
+30| economy = 0
+
+31| j = 0 | 0 < 1 (True)
+
+33| fillDist = 11319 - 10687 => 632
+
+34| economy = 82.8 / 632 * 100.0 => 13.10
+
+35| 35| dist = 0 + 632 => 632
+
+
+31| j = 1 | 1 < 1 (False)
+
+37| economy = 13.10 / 1 => 13.10
+
+38| 13.10 < 9999 (False)
+
+43| 13.10 > -1 (True)
+
+45| worstEconomy = 13.10
+
+46| worstPos = 0
+
+48| totalEconomy = 0.0 + 13.10 => 13.10
+
+27| i = 1 | 1 < 2 (True) (add 1 to i)
+
+29| Declare dist = 0
+
+30| economy = 0
+
+31| j = 0 | 0 < 2 (True) (add 1 to j)
+
+33| fillDist = 22580 - 21992 => 588
+
+34| economy = 92.1 / 588 * 100.0 => 15.66
+
+35| dist = 0 + 588 => 588
+
+31| j = 1 | 1 < 1
+ 
+
+
+
+               
+

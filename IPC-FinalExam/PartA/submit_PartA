@@ -1,0 +1,27 @@
+71| if (strcmp(word, thesaurus[i].word))
+
+-> if (!strcmp(word, thesaurus[i].word))
+
+If the user entered the value, there would be a value in "word". But "thesaurus[i].word" has no entered value and contains zero which is initialized by main function. So, to enter a value in "thesaurus[i].word", use strcmp to check if the values of the two A"word" and  "thesaurus[i].word" are different. The strcmp will return 0 if the two values are exact the same. 
+
+
+
+
+88| thesaurus[i].synonymCount;
+
+-> thesaurus[i].synonymCount++;
+
+If I can't find an empty space, raise the value by 1 to enter the value in the next empty space.
+
+
+
+
+117| quitting = (valid == 1 || strcmp("Q", word) == 0);
+-> quitting = (valid == 1 && strcmp("Q", word) == 0); 
+If the user only entered Q, the valid value is 1. And if I compare the number of words between 'Q' and word value using strcmp, the value returned is zero. So, in order to end the loop, I need to create a condition that applies to both cases. To terminate when exactly Q is entered
+
+
+140| numEntries = add(word, synonym, relatedFactor, thesaurus, MAX_ENTRIES);
+-> numEntries += add(word, synonym, relatedFactor, thesaurus, MAX_ENTRIES);
+numEntries is used as the maximum value on the 129th line when the final output will be printed. Therefore, if the user enters the correct value, the value of numEntries, which is used as the maximum value, should be increased one by one.
+

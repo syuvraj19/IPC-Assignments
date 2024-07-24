@@ -1,0 +1,59 @@
+Enter a word, synonym, and related factor (example: Structure|House|1)
+
+Enter 'Q' by itself to exit (example: Q)
+
+ 
+
+Add to thesaurus [word|synonym|factor]: Structure|House|1
+
+Add to thesaurus [word|synonym|factor]: Vehicle|Car|1
+
+Add to thesaurus [word|synonym|factor]: Structure|Building|1
+
+Add to thesaurus [word|synonym|factor]: Vehicle|Truck|1
+
+Add to thesaurus [word|synonym|factor]: Feline|Tiger|2
+
+Add to thesaurus [word|synonym|factor]: error
+
+ 
+
+!!! Invalid input !!!
+
+Enter a word, synonym, and related factor (example: Structure|House|1)
+
+Enter 'Q' by itself to exit (example: |)
+
+ 
+
+Add to thesaurus [word|synonym|factor]: Structure|Shed|3
+
+Add to thesaurus [word|synonym|factor]: Q
+
+ 
+
+Thesaurus Data:
+
+ 1) Structure
+
+         1. House (Factor:1)
+
+         2. Building (Factor:1)
+
+         3. Shed (Factor:3)
+
+ 2) Vehicle
+
+         1. Car (Factor:1)
+
+         2. Truck (Factor:1)
+
+ 3) Feline
+
+         1. Tiger (Factor:2)
+
+ 
+
+Application exiting... Goodbye!
+
+------------------------- END OF SAMPLE ----------------------------

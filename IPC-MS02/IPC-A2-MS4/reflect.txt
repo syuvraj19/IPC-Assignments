@@ -1,0 +1,12 @@
+/* -------------------------------------------
+Name:            Yuvraj Singh
+Student number:  155580210
+Email:           yuvraj-singh5@myseneca.ca
+Assignment-2-Milestone-4-Reflection
+---------------------------------------------- */
+
+	I was able to learn and organize how to program in C language as a whole, while I was conducting this workshop for the last time. In addition, I found that making code as my own function rather than continuing to write code for repeated work makes it cleaner and more readable.
+
+	During this last workshop, I used the getTenDigitPhone function and findContactIndex function many times. These two functions played a key role in this workshop, which is avoiding coding repeated tasks multiple times and making the code cleaner and neat. Because I had to keep receiving information from the user at the stage of updating, modifying, or finding contacts. However, since I made a getTenDigitPhone function so that only 10 numeric characters can be received, I could make the code neatly in other steps using only the getTenDigitPhone function and receive information from the user. Also, the findContactIndex function was necessary at the same stage as mentioned above because it was necessary to verify that the existing data and user-entered information matched each time.  As a result, the findContactIndex function also helps to avoid repetitive tasks and makes the code more easily reading overall.
+
+	Finally, I thought it would be good to add the function of bringing up contact information text files from outside while executing code. The reason is that most people have a lot of contact information, which means I have to write lots of information one by one directly to the code, and they might make the code to read difficult. However, if I load a file from the outside, I can make the code much cleaner overall. It would also be nice to have the function to save the contact back to the outside as a text file after modifying. The reason is that if I save the modifications in the code directly as a file, I can avoid the repetitive task of re-modifying the original file.
