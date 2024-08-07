@@ -1,0 +1,87 @@
+/*
+*****************************************************************************
+                        Assignment 1 - Milestone 2- reflection
+Full Name  : yuvraj singh
+Student ID#: 155580210
+Email      : yuvraj-singh5@myseneca.ca
+Section    : IPC-144-ZEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+*/
+
+
+Q1. What factors must you consider when naming a module or library? Why do you 
+think it is a suggested best practice to identify a library's header and source 
+code files using the same name? Give an example from this assignment to support
+your argument.
+
+Ans-1- while naming a module or library the most important thing is the relevance 
+of the name in context to the task performed like math.h is a library that contains 
+all the arithmetical operating functions as we can see the name defines the library.
+Second is the that the name of any module or file should be short and distinct, it 
+should not match with any other module used in that program or else the program will 
+not compile. Also another property for the name should be, it should be unique and 
+not similar to other modules as it may confuse the programmer while writing the code.
+It's also a good idea to include the project's version in the name.All these points 
+should be kept in mind while naming a module or library.
+
+It is considered a good practice to identify a library's header and source code files 
+using the same name as the the function provide in the source code are under the header 
+of the same file name which contains all c function declaration and other macro definitions 
+this makes it easy to keep track of numerous function that are used in one program from 
+the header file only and by making it of the name it keeps it easy to track of which source 
+code file has their function and macro definitions in which header file.
+
+For example- The clinic.c and clinic.h files have the same name but different work because 
+of their extension, source code file holds the code- the looping, the nested statements all 
+the programming part and on the other side the header file holds all the function and macro 
+definitions that are to be called at various points in the source code.if we give a random 
+name to the header file like xyzzy.h we will never be able to find we are all the definitions.
+
+
+
+***********************************************************************************************
+
+Q2. So far, you have created and are maintaining two modules in the development of
+this application. Why do we have these two modules and explain why these aren't 
+combined into a single module?
+
+Ans-2- as we are maintaining two modules in this project and not compiles into one is due to 
+one simple reason that is, for reducing the effort as we have already built the core.c and core.h 
+we can use some of the parts like selection loops in the clinic project which will save our time 
+for writing more code, we can just easily direct user input towards the previous code and set new 
+parameters for the input to be accepted it makes it time saving but at the same time very complex 
+to handle the module. If we combine it into a single module the length of the code will be so long 
+that it will be difficult to keep a track of it and keep on scrolling for the problem, as we know 
+that our previous files are perfectly working we can take the advantage of the previous code, which 
+saves us effort and time.
+
+For example- using the looping statements from core file in clinic file and adjusting the input 
+parameter to 5 option available for the main menu.
+
+***********************************************************************************************
+
+
+Q3. Modules are typically split into a header file and an implementation file. 
+What purpose and benefit is there to this division? Refer to the module(s) in 
+this application in your explanation.
+
+Ans-3- The division done to achieve a separate header and implementation file.
+A header file, with the extension. h, contains C function declarations and 
+macro definitions that can be shared across multiple source files.it helps in the 
+case of large files in which the person can't keep the track of the program and
+modules in it so the function statements are defined in header file and can be 
+called to utilize that function by linking it with the module or program present 
+in the implementation file. This is a great method to reduce the length of the code 
+Which help the programmer keep track of it, also helps in reducing error related to
+Functions, play a important role in input parameter alter as you can change the macro and 
+Function definitions from the header file and not anything from the module which makes 
+Editing the code hassle free.
+
+
+
+***********************************************************************************************

@@ -1,0 +1,117 @@
+*****************************************************************************
+                        Assignment 1 - Milestone 1- Reflection
+Full Name  : yuvraj singh
+Student ID#: 155580210
+Email      : yuvraj-singh5@myseneca.ca
+Section    : IPC-144-ZEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Q1. From the core functions library, what function was the most challenging to define and
+    clearly describe the challenge(s) including how you managed to overcome them in the 
+    context of the methods used in preparing your logic, debugging, and testing.
+
+Ans 1- for me inputCString and displayFormattedPhone were the most challenging to define
+As there was a very complex coding involved in both of them as in the case of inputCString
+The instruction were mentioned not to use any string library function and to overcome that 
+I have to calculate The length of the string manually using looping and other problem was 
+include space between an input that was "Seneca College" to overcome this problem I used 
+%[^\n] instead of %s.
+
+As we can see-
+
+
+void inputCString(char charpointer[], int min_char, int max_char)
+{
+    char word[500];
+    int i = 0, j = 0, k = 0;
+
+    while(1)
+    {
+        scanf("%[^\n]", word);
+        clearInputBuffer();
+
+        for(i = 0; word[i] != '\0'; ++i)
+        {
+            k++;
+        } 
+
+	....}
+
+Apart from this the other challenging part was displayFormattedPhone function as to define this 
+I have to check that the string is empty or not and other was to not to assume a valid c string 
+array and carefully validate argument char array that contains digit between 0-9 and its exactly 
+10 digits long as we can see in the part from the core file below other than validation display 
+The phone no. according to when it's a valid c string phone no. just required a for loop.
+
+As we can see-
+
+
+char num[]="0123456789";
+
+
+if (a!=1)
+    {
+        y=0;
+        while (y<10 && !a)
+        {
+            s = 0;
+            x=0;
+            while(x<10 && !s)
+            {
+                if(num[x]==cell[y])
+                {
+                    s = 1;
+                }
+                x++;
+            }
+            if(!s)
+            {
+                a = 1;
+            }y++;
+        }
+    }
+*****************************************************************************************************
+
+Q2. It is good practice to initialize variables to a "safe empty state". With respect to 
+    variable initialization, what is the difference between assigning 0 and NULL? When 
+    do you use one over the other and why?
+
+Ans 2- Yes, it is considered a good practice to initialize variables to a "safe empty state"
+This to ensure that variables are defined in a well defined state, which means it satisfies
+the requirements for its member functions to function in a well-defined manner. the variable 
+will continue to work in a efficient way until main function member in which these variables 
+are defined choose to changes those states. Mostly these safe empty states are used incase 
+of multiple objects defined user a single declaration, it also ensure on calling the function 
+doesn't break and behave as expected.
+
+The difference between zero and null is that Null is a meaningful value that indicates that the 
+variable has no value whereas, Zero is a value, and it will be treated as such throughout the flow
+sequence.When a pointer is compared to the constant literal 0, it is being checked to see if it is 
+a null pointer whereas a null pointer constant is what this 0 is referred to as. 0 cast to the type 
+void * is both a null pointer and a null pointer constant.
+
+******************************************************************************************************
+
+Q3. Your friend (also a beginner programmer) is having difficulty understanding how to 
+    manage the "standard input buffer" (particularly when there is residual data). Your 
+    friend has read all the course notes, Googled the topic, followed along with course 
+    lectures about this topic, but is still struggling with this concept. Describe exactly 
+    how you would attempt to help your friend understand this topic?
+
+
+Ans 3- I would advisee him to go and watch the last to course lectures again that was about the topic 
+pointers and strings which will help him get more grasp of the assignment and also would give him a 
+Example about to make hime understand the what actually is standard input buffer which is when you run 
+the code it will collect input from the user until he presses Enter and validates it, in same way to 
+minimize that effort Function calls are present in the code which will clear the slate and will only 
+accept a valid value, your programme should wait for more input from subsequent getchar() calls. After 
+this example he would defiantly have a clear way to go But to help him more I would show him the flowchart 
+in instruction which gives a clear idea about it.
+
+
+******************************************************************************************************
